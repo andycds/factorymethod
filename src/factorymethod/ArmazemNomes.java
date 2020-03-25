@@ -9,7 +9,7 @@ public abstract class ArmazemNomes {
 		this.nomes = nomes;
 	}
 	
-	public List<Nome> armazenar(String s){
+	public List<Nome> armazenar(String s) {
 		CriadorDeNomes cn = getCriador();
 		Nome nome = cn.criar(s);
 		nomes.add(nome);
