@@ -25,9 +25,7 @@ public class AgregadorTopico implements ConsomeNoticia {
 		}
 		if (conteudos.size() >= 10) {
 			System.out.println("Ja temos 10 noticias do mesmo topico:");
-			for (Conteudo conteudo : conteudos) {
-				System.out.println(conteudo);
-			}
+			conteudos.forEach(c -> System.out.println(c));
 			conteudos.clear();
 		}
 	}
